@@ -18,8 +18,8 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Public URL | https://k3-day12-production.up.railway.app |
-| Platform | Railway |
+| Public URL | https://day12-agent-b2py.onrender.com |
+| Platform | Render |
 | Ngày deploy | 2026-08-10 |
 
 ## Biến Môi Trường Đã Set Trên Cloud
