@@ -89,6 +89,56 @@ HTTP/1.1 200 OK
 
 200 200 200 200 200 200 200 200 200 200 429 429 429 429 429
 ```
+==========================================================================
+CHẤM ĐIỂM TỰ ĐỘNG — K3 Ngày 12: Hạ Tầng Cloud & Deployment
+==========================================================================
+
+>>> CP1 — 12-Factor Config, Health & Logging
+.............                                                                                [100%]
+13 passed in 0.49s
+
+>>> CP2 — Docker: multi-stage, bảo mật image
+................                                                                             [100%]
+16 passed in 3.69s
+
+>>> CP3 — API Security: auth, rate limit, cost guard
+......................                                                                       [100%]
+22 passed in 0.22s
+
+>>> CP4 — Scaling & Reliability: stateless, probe, shutdown
+...................                                                                          [100%]
+19 passed in 0.10s
+
+>>> CP5 — Cloud Deployment: service chạy thật
+........sssss                                                                                [100%]
+8 passed, 5 skipped in 1.98s
+
+>>> BONUS — CI/CD với GitHub Actions (không bắt buộc)
+.............                                                                                [100%]
+13 passed in 0.92s
+
+==========================================================================
+BẢNG ĐIỂM
+==========================================================================
+  CP1 — 12-Factor Config, Health & Logging         13/13 test            15.0/15
+  CP2 — Docker: multi-stage, bảo mật image         16/16 test            15.0/15
+  CP3 — API Security: auth, rate limit, cost guard 22/22 test            20.0/20
+  CP4 — Scaling & Reliability: stateless, probe, shutdown 19/19 test            20.0/20
+  CP5 — Cloud Deployment: service chạy thật        8/8 test (5 bỏ qua)   15.0/15
+  Exercises — câu hỏi phản ánh                     10/10 câu             15.0/15
+--------------------------------------------------------------------------
+  Điểm phần bắt buộc                                                    100.0/100
+  BONUS — CI/CD với GitHub Actions                 13/13 test            +10.0/10
+--------------------------------------------------------------------------
+  TỔNG CUỐI (trần 100)                                                  100.0/100
+==========================================================================
+  ⚠  điểm bonus bị cắt 10.0đ do chạm trần 100
+
+  Xuất sắc. Service của bạn đã đạt chuẩn production.
+
+Ghi chú: điểm exercises là điểm hoàn thành — chất lượng nội dung
+sẽ được giảng viên chấm lại thủ công.
+```
 
 ## Ảnh Chụp Màn Hình
 

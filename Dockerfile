@@ -39,6 +39,7 @@ USER appuser
 
 COPY app ./app
 COPY utils ./utils
+COPY static ./static
 
 EXPOSE 8000
 

@@ -15,9 +15,12 @@ from __future__ import annotations
 
 from contextlib import asynccontextmanager
 from functools import lru_cache
+import os
+from pathlib import Path
 
 from fastapi import Depends, FastAPI
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from utils.mock_llm import ask_llm
@@ -64,6 +67,21 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="Day 12 Production Agent", version=SERVICE_VERSION, lifespan=lifespan)
+
+# Mount static folder for HTML games
+if os.path.isdir("static"):
+    app.mount("/static", StaticFiles(directory="static", html=True), name="static")
+elif os.path.isdir("stactic"):
+    app.mount("/static", StaticFiles(directory="stactic", html=True), name="static")
+
+
+@app.get("/")
+def index():
+    """Nhảy trực tiếp vào trò chơi 2048 Pastel."""
+    for candidate in [Path("static/2048-pastel.html"), Path("stactic/2048-pastel.html")]:
+        if candidate.exists():
+            return FileResponse(candidate)
+    return HTMLResponse("<h1>Trò chơi 2048 Pastel</h1>")
 
 
 class AskRequest(BaseModel):
