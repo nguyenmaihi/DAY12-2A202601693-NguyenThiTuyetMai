@@ -12,7 +12,7 @@
 |-----|----------|
 | Họ và tên | Nguyễn Thị Tuyết Mai |
 | Mã học viên | 2A202601693 |
-| Repo | https://github.com/nguyenmaihi/K3_DAY12_2A202601693_NguyenThiTuyetMai |
+| Repo | https://github.com/nguyenmaihi/DAY12-2A202601693-NguyenThiTuyetMai |
 
 ## Service
 

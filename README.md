@@ -1,4 +1,4 @@
-![CI](https://github.com/nguyenmaihi/K3_DAY12_2A202601693_NguyenThiTuyetMai/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/nguyenmaihi/DAY12-2A202601693-NguyenThiTuyetMai/actions/workflows/ci.yml/badge.svg)
 
 # K3 — Ngày 12: Hạ Tầng Cloud & Deployment (9h00–13h00)
 
